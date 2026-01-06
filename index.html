@@ -1,120 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Fabricio Vianna">
-    <meta name="description" content="Meu primeiro portfólio">
-    <title>FV - Portfólio</title>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fabricio Vianna - Desenvolvedor Back-End</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/script.js"></script>
+    </head>
 
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header" id="header">
-        <div class="header-container">
-            <div class="header-logo">
-                <img src="./images/Logo.png" alt="Ícone principal">
-            </div>
-            <div class="header-container-nav">
-                <nav class="header-nav">
-                    <ul class="header-menu">
-                        <li class="menu-item"><a href="#projetos" class="btn btn-header">Projects</a></li>
-                        <li class="menu-item"><a href="#habillity" class="btn btn-header">Skills</a></li>
-                        <li class="menu-item"><a href="#contatos" class="btn btn-header">Contact</a></li>
-                        <li class="menu-item"><a href="#" class="btn btn-header"><img src="./images/light-mode.png" alt="Change mode"></a></li>
-                    </ul>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo"><img src="images/Logo.png" alt="Logo" /></div>
+                <nav>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                    <button class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon"></i>
+                    </button>
                 </nav>
-            </div>
-        </div>
-    </header>
+            </header>
 
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-title">
-                <h1>Hi, I am <span class="name-decoration">Fabricio Vianna</span></h1>
-            </div>
-            <div class="hero-content">
-                <h2 class="hero-content-title">A Web Developer</h2>
-                <p class="text hero-text">A 20-year-old Information Systems student at PUC Minas, ranked among the top universities in Brazil. Driven by discipline, focus, and resilience — skills sharpened through years of preparation and approvals in competitive military exams — I bring a strong commitment to personal and professional growth.
-Since discovering my passion for programming, I've been specializing in web development, building a solid foundation in HTML, CSS, JavaScript, Git, and programming logic, studying through top-rated courses like Daniel Tapias’ Web Development Program on Udemy. My goal is clear: to become a Full-Stack Developer capable of delivering efficient, high-quality solutions while thriving in agile, collaborative environments.
-I value integrity, continuous improvement, and teamwork. Outside of tech, I maintain discipline and focus through swimming, weightlifting, and living by principles that align with faith and service.
-I'm excited about the challenges ahead and always open to opportunities where I can learn, contribute, and grow alongside high-performing teams. Let’s connect!
-</p>
-            </div>
-        </div>
-    </section>
+            <section class="hero">
+                <h1>Oi, eu sou <span>Fabricio Vianna</span></h1>
+                <h2>Desenvolvedor Back-End</h2>
+                <p>
+                    Estudante de Sistemas de Informação na PUC Minas, 21 anos.
+                    Sou disciplinado, focado e apaixonado por programação. Meu
+                    objetivo é me tornar um Desenvolvedor Back-End completo,
+                    criando soluções inovadoras e eficientes que fazem a
+                    diferença.
+                </p>
+            </section>
 
-    <section class="projects distance-page" id="projetos">
-        <h2 class="title">Projects</h2>
+            <section id="projects">
+                <h2 class="section-title">Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>JDBC CRUD – Seller & Department</h3>
+                        <p>
+                            Aplicação Java com JDBC e padrão DAO para CRUD
+                            completo de vendedores e departamentos, com
+                            tratamento de exceções customizadas e testes
+                            automatizados.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JDBC</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">DAO</span>
+                            <span class="tech-tag">POO</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Demonstra habilidades avançadas em back-end e
+                            manipulação de banco de dados
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/fabricio-vianna/jdbc-crud-seller-department/tree/master"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
 
-        <div class="projects-container">
-            <div class="cards-projects actions">
-                <h3 class="cards-title">Project Aprenser</h3>
-                <p class="text">Aprenser is a landing page that represents a fictional technology school. The project simulates a modern and informative institutional website, with clearly defined sections about courses, the school’s unique features, and student testimonials.</p>
-                <span class="cards-tools">HTML CSS</span>
-                <div class="cards-icons">
-                    <a href="https://github.com/fabricio-vianna/Aprenser" target="_blank" rel="noopener noreferrer"><img src="./images/GitHub-Light.png" alt="Projeto Moda Ora"></a> 
-                    <a href="https://fabricio-vianna.github.io/Aprenser/" target="_blank" rel="noopener noreferrer"><img src="./images/External-Link-Light.png" alt="Projeto Moda Ora"></a>
+                    <div class="project-card">
+                        <h3>Cost of Production Calculator</h3>
+                        <p>
+                            Calculadora em Java que determina o custo de
+                            produção de produtos finais, incluindo ingredientes,
+                            receitas e embalagens, com sugestão de preço de
+                            venda.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">POO</span>
+                            <span class="tech-tag">Lógica de Negócios</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Excelente para demonstrar aplicação prática de
+                            lógica de negócios em Java
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/fabricio-vianna/cost-of-production-calculator"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>SchoolMaster</h3>
+                        <p>
+                            Sistema de gestão acadêmica completo em Java,
+                            incluindo cursos, disciplinas, alunos, professores,
+                            avaliações e boletins.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">POO</span>
+                            <span class="tech-tag">Coleções</span>
+                            <span class="tech-tag">Lógica de Sistemas</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Mostra capacidade de desenvolver sistemas
+                            complexos e completos
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/fabricio-vianna/SchoolMaster"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Abrigo de Animais</h3>
+                        <p>
+                            Simulação de adoção de animais em
+                            Node.js/JavaScript, com regras de preferência,
+                            limite de adoção e testes automatizados.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Jest</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Demonstra habilidades em desenvolvimento back-end
+                            e testes automatizados
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/fabricio-vianna/desafio-fabricio-vianna-2025"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Tô Lendo</h3>
+                        <p>
+                            Plataforma web inspirada no Skoob para cadastro e
+                            exibição de livros por gênero, com interface
+                            intuitiva e responsiva.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Demonstra habilidades em front-end e
+                            desenvolvimento web completo
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe1-t5-g2-turma5"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Saúde Agendada</h3>
+                        <p>
+                            Solução de agendamento de consultas e exames no
+                            sistema público de saúde, com modelagem de processos
+                            e arquitetura de dados no Sidel One.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Low-code</span>
+                            <span class="tech-tag">Sidel One</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">NoSQL</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Mostra capacidade de análise de processos e
+                            soluções corporativas
+                        </p>
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe2-t4-saudeagendada"
+                                target="_blank"
+                                title="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>E-Bear</h3>
+                        <p>
+                            Projeto de inclusão educacional, focado em
+                            documentação, pesquisa de mercado e ideação de
+                            soluções inovadoras.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Pesquisa</span>
+                            <span class="tech-tag">Documentação</span>
+                            <span class="tech-tag">Design Thinking</span>
+                        </div>
+                        <p class="project-highlight">
+                            💼 Demonstra habilidades em planejamento e
+                            documentação de projetos
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="cards-projects actions">
-                <h3 class="cards-title">Project Moda Ora</h3>
-                <p class="text">Moda Ora is a landing page project focused on fashion and style. The layout showcases a fictional clothing brand, highlighting collections, trends, and calls to action, simulating a promotional website for a modern fashion store.</p>
-                <span class="cards-tools">HTML CSS</span>
-                <div class="cards-icons">
-                    <a href="https://github.com/fabricio-vianna/Moda-Ora" target="_blank" rel="noopener noreferrer"><img src="./images/GitHub-Light.png" alt="Projeto Moda Ora"></a> 
-                    <a href="https://fabricio-vianna.github.io/Moda-Ora/" target="_blank" rel="noopener noreferrer"><img src="./images/External-Link-Light.png" alt="Projeto Moda Ora"></a>
+            </section>
+
+            <section id="skills">
+                <h2 class="section-title">Habilidades</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-node"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <p>NoSQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <p>Git</p>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+            <section>
+                <h2 class="section-title">Find me on</h2>
+                <div class="social-links">
+                    <a
+                        href="https://github.com/fabricio-vianna"
+                        target="_blank"
+                        title="GitHub"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/fabricio-vianna/"
+                        target="_blank"
+                        title="LinkedIn"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://www.tiktok.com/@dev.vianna"
+                        target="_blank"
+                        title="TikTok"
+                        ><i class="fab fa-tiktok"></i
+                    ></a>
+                    <a
+                        href="https://www.instagram.com/_fabricio.vianna_/"
+                        target="_blank"
+                        title="Instagram"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-buttons">
+                    <a
+                        href="mailto:fab.vianna.1976@gmail.com"
+                        target="_blank"
+                        class="contact-btn"
+                    >
+                        <i class="fas fa-envelope"></i>
+                        Me envie um email
+                    </a>
+                    <a
+                        href="https://wa.me/5521981156786?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                        class="contact-btn"
+                        target="_blank"
+                    >
+                        <i class="fas fa-comment"></i>
+                        Me mande uma mensagem
+                    </a>
+                </div>
+            </section>
+
+            <footer>
+                <p>Criado por Fabricio</p>
+            </footer>
         </div>
-    </section>
-
-    <section class="skills distance-page" id="habillity">
-        <h2 class="title">Skills</h2>
-        
-        <div class="skills-container">
-            <ul class="skills-text">
-                <li class="skills-items actions"><img src="./images/HTML-Light.png" alt="HTML Light">HTML</li>
-                <li class="skills-items actions"><img src="./images/CSS-Light.png" alt="CSS Light">CSS</li>
-                <li class="skills-items actions"><img src="./images/JS-Light.png" alt="JS Light">JavaScript</li>
-                <li class="skills-items actions"><img src="./images/Git-Light.png" alt="Git Light">Git</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="website-container distance-page">
-        <div class="website-content">
-            <h2 class="title website-title">Find me on</h2>
-            <p class="text website-text">Feel free to connect with me</p>
-        </div>
-
-        <div class="website-network">
-            <a href="https://github.com/fabricio-vianna" target="_blank" rel="noopener noreferrer"><img src="./images/GitHub-Light.png" alt="GitHub Light"></a>
-            <a href="https://www.linkedin.com/in/fabricio-vianna/" target="_blank" rel="noopener noreferrer"><img src="./images/Linkedin-Light.png" alt="Linkedin Light"></a>
-            <a href="https://www.tiktok.com/@dev.vianna" target="_blank" rel="noopener noreferrer"><img src="./images/TikTok-Light.png" alt="TikTok Light"></a>
-            <a href="https://www.instagram.com/fabricio_076/" target="_blank" rel="noopener noreferrer"><img src="./images/Instagram-Light.png" alt="Instagram Light"></a>
-        </div>
-    </section>
-    <section class="contact distance-page" id="contatos">
-        <h2 class="title contact-title">Contact</h2>
-
-        <div class="contact-container">
-            <div class="contact-items">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fab.vianna.1976@gmail.com" target="_blank" class="btn btn-contact"><img src="./images/Gmail-Light.png" alt="email me"> email me</a>
-            </div>
-
-            <div class="contact-items">
-                <a href="https://wa.me/5521981156786" target="_blank" class="btn btn-contact"><img src="./images/Whats-Light.png" alt="whatsapp Light"> messsage me</a>
-            </div>
-    </section>
-
-    <footer class="footer">
-        <p class="footer-text">Created by Fabricio</p>
-    </footer>
-</body>
+    </body>
 </html>
